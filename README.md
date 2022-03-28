@@ -15,18 +15,15 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
+👤 **Omar Salem**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+[<code><img height="26" style="padding-right:2%;" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"></code>](https://github.com/omarsalem7)
+[<code><img height="26" style="padding-right:2%;" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"></code>](https://twitter.com/ShaherShamroukh/)
+[<code><img height="26" style="padding-right:2%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"></code>](https://www.linkedin.com/in/omar-salem-a6945b177/)
+ <a href="mailto:omarsalem0721@gmail.com?subject=Hey Omar!"><img height="26" style="padding-right:2%;" src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg"></a>
+ 
+<br/>
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -36,12 +33,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
