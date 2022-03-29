@@ -35,7 +35,52 @@ VALUES ('Blossom','1998-10-13', 3, TRUE, 17 );
 INSERT INTO animals (name,date_of_birth,escape_attempts,neutered,weight_kg)
 VALUES ('Ditto','1998-05-14', 4, TRUE, 22 );
 
+-- Inside a transaction update the animals table by setting the species column to unspecified
+BEGIN;
+UPDATE animals SET species = 'unspecified';
 
+-- Verify that change was made
+SELECT * FROM animals;
+
+--  roll back the change
+ROLLBACK;
+
+-- verify that species columns went back to the state before transaction.
+SELECT * FROM animals;
+
+-- make a transcation
+BEGIN;
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+
+COMMIT;
+
+-- Verify that change was made
+SELECT * FROM animals;
+
+
+-- Deleting all animals
+BEGIN;
+
+DELETE FROM animals;
+
+-- Verify that the animnals table is empty
+SELECT * FROM animals;
+
+ROLLBACK;
+
+--verify that thet changes were rolledback
+SELECT * FROM animals;
+
+
+BEGIN;
+DELETE FROM animals WHERE date_of_birth >'2022-01-01';
+select * from animals;
+SAVEPOINT save_point1;
+
+UPDATE animals SET weight_kg = weight_kg * -1;
+
+ROLLBACK TO save_point1;
 
 
 
