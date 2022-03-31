@@ -55,5 +55,13 @@ CREATE TABLE specializations (
     FOREIGN KEY (vet_id) REFERENCES vets (id) 
 );
 
+--visits table
+CREATE TABLE visits (
+    animal_id INT NOT NULL,
+    vet_id INT NOT NULL,
+	date_of_visit DATE,
+    FOREIGN KEY (animal_id) REFERENCES animals (id),
+    FOREIGN KEY (vet_id) REFERENCES vets (id) 
+);
 
 
