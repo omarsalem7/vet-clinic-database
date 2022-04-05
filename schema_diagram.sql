@@ -4,3 +4,8 @@ CREATE TABLE treatments (
   name VARCHAR(50) NOT NULL
 );
 
+CREATE TABLE patients (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  date_of_birth DATE NOT NULL
+);
