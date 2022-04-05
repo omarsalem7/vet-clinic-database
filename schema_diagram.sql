@@ -9,3 +9,14 @@ CREATE TABLE patients (
   name VARCHAR(50) NOT NULL,
   date_of_birth DATE NOT NULL
 );
+
+
+CREATE TABLE medical_histories (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  admitted_at TIME NOT NULL,
+  patient_id INT NOT NULL,
+  status VARCHAR(255) NOT NULL,
+  FOREIGN KEY (patient_id) 
+    REFERENCES patients (id)
+    ON DELETE CASCADE
+);
