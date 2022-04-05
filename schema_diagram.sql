@@ -20,3 +20,16 @@ CREATE TABLE medical_histories (
     REFERENCES patients (id)
     ON DELETE CASCADE
 );
+
+
+-- sperate many to many relation by creating this table
+CREATE TABLE medical_histories_treatments (
+  medical_history_id INT NOT NULL,
+  treatment_id INT NOT NULL,
+  FOREIGN KEY (medical_history_id) 
+    REFERENCES medical_histories (id)
+    ON DELETE CASCADE,
+  FOREIGN KEY (treatment_id) 
+    REFERENCES treatments (id)
+    ON DELETE CASCADE
+);
