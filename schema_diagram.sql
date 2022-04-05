@@ -33,3 +33,16 @@ CREATE TABLE medical_histories_treatments (
     REFERENCES treatments (id)
     ON DELETE CASCADE
 );
+
+
+-- create invoices table 
+CREATE TABLE invoices (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  total_amount DECIMAL NOT NULL,
+  generated_at TIME NOT NULL,
+  payed_at TIME NOT NULL,
+  medical_history_id INT,
+  FOREIGN KEY (medical_history_id) 
+    REFERENCES medical_histories (id)
+    ON DELETE CASCADE
+);
