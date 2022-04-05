@@ -46,3 +46,18 @@ CREATE TABLE invoices (
     REFERENCES medical_histories (id)
     ON DELETE CASCADE
 );
+
+CREATE TABLE invoice_items (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  unit_price DECIMAL NOT NULL,
+  quantity INT NOT NULL, 
+  total_price DECIMAL NOT NULL,
+  invoice_id INT,
+  treatment_id INT,
+  FOREIGN KEY (invoice_id) 
+    REFERENCES invoices (id)
+    ON DELETE CASCADE,
+  FOREIGN KEY (treatment_id) 
+    REFERENCES treatments (id)
+    ON DELETE CASCADE
+); 
